@@ -51,7 +51,7 @@
             // 
             // browse1
             // 
-            this.browse1.Location = new System.Drawing.Point(160, 76);
+            this.browse1.Location = new System.Drawing.Point(159, 66);
             this.browse1.Name = "browse1";
             this.browse1.Size = new System.Drawing.Size(633, 347);
             this.browse1.TabIndex = 5;
