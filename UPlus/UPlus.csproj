@@ -247,6 +247,7 @@
     <Compile Include="Frontend\UserControls\NavigationPanel.Designer.cs">
       <DependentUpon>NavigationPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Globals\Auth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frontend\MainForm.resx">
