@@ -293,10 +293,17 @@
   <ItemGroup>
     <Content Include="References\Guna.UI.dll" />
     <Content Include="References\Siticone.UI.dll" />
-    <None Include="Resources\edit.png" />
-    <None Include="Resources\logout.png" />
-    <None Include="Resources\control.png" />
-    <None Include="Resources\setting.png" />
+    <None Include="Resources\search %281%29.png" />
+    <None Include="Resources\search.png" />
+    <EmbeddedResource Include="Resources\library %281%29.png" />
+    <EmbeddedResource Include="Resources\add.png" />
+    <EmbeddedResource Include="Resources\edit.png" />
+    <EmbeddedResource Include="Resources\logout.png" />
+    <EmbeddedResource Include="Resources\control.png" />
+    <EmbeddedResource Include="Resources\San Francisco Font.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\setting.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

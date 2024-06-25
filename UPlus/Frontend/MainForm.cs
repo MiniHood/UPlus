@@ -38,5 +38,15 @@ namespace UPlus
         {
 
         }
+
+        private void siticoneImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneImageButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
