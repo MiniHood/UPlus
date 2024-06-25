@@ -34,6 +34,7 @@
             this.DragPanel = new Guna.UI.WinForms.GunaPanel();
             this.browse1 = new UPlus.Frontend.UserControls.Browse();
             this.navigationPanel1 = new UPlus.Frontend.UserControls.NavigationPanel();
+            this.RoundEdge = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.SuspendLayout();
             // 
             // DragControl
@@ -51,9 +52,9 @@
             // 
             // browse1
             // 
-            this.browse1.Location = new System.Drawing.Point(140, 48);
+            this.browse1.Location = new System.Drawing.Point(140, 43);
             this.browse1.Name = "browse1";
-            this.browse1.Size = new System.Drawing.Size(633, 299);
+            this.browse1.Size = new System.Drawing.Size(633, 304);
             this.browse1.TabIndex = 5;
             // 
             // navigationPanel1
@@ -65,6 +66,10 @@
             this.navigationPanel1.Size = new System.Drawing.Size(140, 347);
             this.navigationPanel1.TabIndex = 3;
             this.navigationPanel1.Load += new System.EventHandler(this.navigationPanel1_Load_1);
+            // 
+            // RoundEdge
+            // 
+            this.RoundEdge.TargetControl = this;
             // 
             // MainForm
             // 
@@ -87,6 +92,7 @@
         private Frontend.UserControls.NavigationPanel navigationPanel1;
         private Frontend.UserControls.Browse browse1;
         private Guna.UI.WinForms.GunaPanel DragPanel;
+        private Siticone.UI.WinForms.SiticoneElipse RoundEdge;
     }
 }
 
