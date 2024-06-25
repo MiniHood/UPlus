@@ -30,24 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.DragControl = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
+            this.DragPanel = new Guna.UI.WinForms.GunaPanel();
             this.browse1 = new UPlus.Frontend.UserControls.Browse();
             this.navigationPanel1 = new UPlus.Frontend.UserControls.NavigationPanel();
             this.SuspendLayout();
             // 
-            // siticoneDragControl1
+            // DragControl
             // 
-            this.siticoneDragControl1.TargetControl = this;
+            this.DragControl.TargetControl = this.DragPanel;
             // 
-            // gunaPanel1
+            // DragPanel
             // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel1.Location = new System.Drawing.Point(140, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(633, 42);
-            this.gunaPanel1.TabIndex = 6;
+            this.DragPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.DragPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DragPanel.Location = new System.Drawing.Point(140, 0);
+            this.DragPanel.Name = "DragPanel";
+            this.DragPanel.Size = new System.Drawing.Size(633, 42);
+            this.DragPanel.TabIndex = 6;
             // 
             // browse1
             // 
@@ -71,7 +71,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 347);
-            this.Controls.Add(this.gunaPanel1);
+            this.Controls.Add(this.DragPanel);
             this.Controls.Add(this.browse1);
             this.Controls.Add(this.navigationPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -83,10 +83,10 @@
         }
 
         #endregion
-        private Siticone.UI.WinForms.SiticoneDragControl siticoneDragControl1;
+        private Siticone.UI.WinForms.SiticoneDragControl DragControl;
         private Frontend.UserControls.NavigationPanel navigationPanel1;
         private Frontend.UserControls.Browse browse1;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaPanel DragPanel;
     }
 }
 
