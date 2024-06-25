@@ -292,6 +292,7 @@
   <ItemGroup>
     <Content Include="References\Guna.UI.dll" />
     <Content Include="References\Siticone.UI.dll" />
+    <None Include="Resources\edit.png" />
     <None Include="Resources\logout.png" />
     <None Include="Resources\control.png" />
     <None Include="Resources\setting.png" />

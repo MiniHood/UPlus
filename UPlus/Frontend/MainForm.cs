@@ -29,5 +29,9 @@ namespace UPlus
 
         }
 
+        private void navigationPanel1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

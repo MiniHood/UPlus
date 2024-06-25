@@ -51,9 +51,9 @@
             // 
             // browse1
             // 
-            this.browse1.Location = new System.Drawing.Point(137, 27);
+            this.browse1.Location = new System.Drawing.Point(140, 48);
             this.browse1.Name = "browse1";
-            this.browse1.Size = new System.Drawing.Size(633, 320);
+            this.browse1.Size = new System.Drawing.Size(633, 299);
             this.browse1.TabIndex = 5;
             // 
             // navigationPanel1
@@ -64,6 +64,7 @@
             this.navigationPanel1.Name = "navigationPanel1";
             this.navigationPanel1.Size = new System.Drawing.Size(140, 347);
             this.navigationPanel1.TabIndex = 3;
+            this.navigationPanel1.Load += new System.EventHandler(this.navigationPanel1_Load_1);
             // 
             // MainForm
             // 

@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NavigationPanel));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.PresetDropDown = new Guna.UI.WinForms.GunaPanel();
             this.SettingsButton = new Guna.UI.WinForms.GunaButton();
+            this.PresetDropDown = new Guna.UI.WinForms.GunaPanel();
             this.LocalButton = new Guna.UI.WinForms.GunaButton();
             this.FavouriteButton = new Guna.UI.WinForms.GunaButton();
             this.CreatedButton = new Guna.UI.WinForms.GunaButton();
             this.BrowseButton = new Guna.UI.WinForms.GunaButton();
             this.PresetButton = new Guna.UI.WinForms.GunaButton();
+            this.CreateButton = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             this.PresetDropDown.SuspendLayout();
             this.SuspendLayout();
@@ -51,22 +52,6 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(140, 347);
             this.gunaPanel1.TabIndex = 3;
-            // 
-            // PresetDropDown
-            // 
-            this.PresetDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
-            this.PresetDropDown.Controls.Add(this.LocalButton);
-            this.PresetDropDown.Controls.Add(this.FavouriteButton);
-            this.PresetDropDown.Controls.Add(this.CreatedButton);
-            this.PresetDropDown.Controls.Add(this.BrowseButton);
-            this.PresetDropDown.Controls.Add(this.PresetButton);
-            this.PresetDropDown.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PresetDropDown.Location = new System.Drawing.Point(0, 0);
-            this.PresetDropDown.MaximumSize = new System.Drawing.Size(171, 181);
-            this.PresetDropDown.MinimumSize = new System.Drawing.Size(171, 41);
-            this.PresetDropDown.Name = "PresetDropDown";
-            this.PresetDropDown.Size = new System.Drawing.Size(171, 41);
-            this.PresetDropDown.TabIndex = 3;
             // 
             // SettingsButton
             // 
@@ -93,6 +78,23 @@
             this.SettingsButton.TabIndex = 0;
             this.SettingsButton.Text = "Exit";
             this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
+            // 
+            // PresetDropDown
+            // 
+            this.PresetDropDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
+            this.PresetDropDown.Controls.Add(this.CreateButton);
+            this.PresetDropDown.Controls.Add(this.LocalButton);
+            this.PresetDropDown.Controls.Add(this.FavouriteButton);
+            this.PresetDropDown.Controls.Add(this.CreatedButton);
+            this.PresetDropDown.Controls.Add(this.BrowseButton);
+            this.PresetDropDown.Controls.Add(this.PresetButton);
+            this.PresetDropDown.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PresetDropDown.Location = new System.Drawing.Point(0, 0);
+            this.PresetDropDown.MaximumSize = new System.Drawing.Size(171, 216);
+            this.PresetDropDown.MinimumSize = new System.Drawing.Size(171, 41);
+            this.PresetDropDown.Name = "PresetDropDown";
+            this.PresetDropDown.Size = new System.Drawing.Size(171, 41);
+            this.PresetDropDown.TabIndex = 3;
             // 
             // LocalButton
             // 
@@ -220,6 +222,31 @@
             this.PresetButton.Text = "Presets";
             this.PresetButton.Click += new System.EventHandler(this.PresetButton_Click_1);
             // 
+            // CreateButton
+            // 
+            this.CreateButton.Animated = true;
+            this.CreateButton.AnimationHoverSpeed = 0.07F;
+            this.CreateButton.AnimationSpeed = 0.03F;
+            this.CreateButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(25)))), ((int)(((byte)(34)))));
+            this.CreateButton.BorderColor = System.Drawing.Color.Black;
+            this.CreateButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.CreateButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CreateButton.FocusedColor = System.Drawing.Color.Empty;
+            this.CreateButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CreateButton.ForeColor = System.Drawing.Color.White;
+            this.CreateButton.Image = global::UPlus.Properties.Resources.edit;
+            this.CreateButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.CreateButton.Location = new System.Drawing.Point(0, 178);
+            this.CreateButton.Name = "CreateButton";
+            this.CreateButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.CreateButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.CreateButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.CreateButton.OnHoverImage = null;
+            this.CreateButton.OnPressedColor = System.Drawing.Color.Black;
+            this.CreateButton.Size = new System.Drawing.Size(171, 34);
+            this.CreateButton.TabIndex = 5;
+            this.CreateButton.Text = "Create";
+            // 
             // NavigationPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,5 +271,6 @@
         private Guna.UI.WinForms.GunaButton BrowseButton;
         private Guna.UI.WinForms.GunaButton PresetButton;
         private Guna.UI.WinForms.GunaButton SettingsButton;
+        private Guna.UI.WinForms.GunaButton CreateButton;
     }
 }
