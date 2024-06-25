@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "Browse";
-            this.Size = new System.Drawing.Size(505, 279);
+            this.Size = new System.Drawing.Size(633, 304);
             this.ResumeLayout(false);
 
         }
